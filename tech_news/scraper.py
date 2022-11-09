@@ -1,6 +1,21 @@
+from requests import HTTPError, ReadTimeout, get
+import time
+# from parsel import Selector
+# from tech_news.database import create_news
 # Requisito 1
-def fetch(url):
-    """Seu código deve vir aqui"""
+URL_BASE = "https://blog.betrybe.com"
+HEADRS = {"user-agent": "Fake user-agent"}
+
+
+# Requisito 1
+def fetch(ur: str, timeout: int = 3) -> str | None:
+    try:
+        time.sleep(1)
+        response = get(ur, headers=HEADRS, timeout=timeout)
+        response.raise_for_status()
+    except (HTTPError, ReadTimeout):
+        return None
+    return response.text
 
 
 # Requisito 2
