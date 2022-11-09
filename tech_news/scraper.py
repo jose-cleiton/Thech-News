@@ -1,5 +1,7 @@
-from requests import HTTPError, ReadTimeout, get
 import time
+
+from requests import HTTPError, ReadTimeout, get
+
 # from parsel import Selector
 # from tech_news.database import create_news
 # Requisito 1
@@ -8,14 +10,15 @@ HEADRS = {"user-agent": "Fake user-agent"}
 
 
 # Requisito 1
-def fetch(ur: str, timeout: int = 3) -> str | None:
+def fetch(url: str, timeout: int = 3) -> str | None:
     try:
         time.sleep(1)
-        response = get(ur, headers=HEADRS, timeout=timeout)
+        response = get(url, headers=HEADRS, timeout=timeout)
         response.raise_for_status()
     except (HTTPError, ReadTimeout):
         return None
-    return response.text
+    else:
+        return response.text
 
 
 # Requisito 2
