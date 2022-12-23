@@ -12,6 +12,41 @@ Para instalar o projeto, siga os seguintes passos:
 
 3. Inicie o servidor de desenvolvimento usando o comando `npm start`.
 
+
+# Em python
+
+## Instalação
+
+Para instalar as dependências do projeto, execute o seguinte comando:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Execução
+
+Para executar o aplicativo, execute o seguinte comando:
+
+```bash
+python -m tech_news.menu
+```
+
+## Testes
+
+Para executar os testes do projeto, execute o seguinte comando:
+
+```bash
+python -m unittest discover
+```
+Esse código cria um arquivo README.md com as seções "Instalação", "Execução" e "Testes", que fornecem instruções sobre como instalar as dependências do projeto, executar o aplicativo e executar os testes, respectivamente.
+
+Espero que isso ajude a esclarecer como criar o seu arquivo README.md. Se você tiver mais dúvidas ou precisar de mais orientação, não hesite em perguntar.
+
+
+
+
+
+
 ## Uso
 
 Para usar o projeto, basta acessar o endereço http://localhost:3000 em seu navegador. As notícias serão exibidas em uma lista e você poderá clicar em cada título para ler a notícia completa.
