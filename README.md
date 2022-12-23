@@ -1,4 +1,4 @@
-# Thech News
+# Tech News
 
 Este é um projeto de notícias de tecnologia que visa fornecer as últimas notícias e atualizações de tecnologia aos leitores.
 
