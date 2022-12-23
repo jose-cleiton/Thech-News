@@ -62,4 +62,4 @@ Este projeto está licenciado sob a licença MIT. Você pode encontrar os termos
 ## Créditos
 
 Este projeto foi criado por José Cleiton. Agradeço a todos os colaboradores que ajudaram a tornar este projeto possível.
-%%%%
+
